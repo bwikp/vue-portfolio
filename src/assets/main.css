@@ -1,15 +1,17 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital@0;1&display=swap');
 
-*,
-html,body{
+*,html,body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body,html{
+html,body{
   height: 100%;
+  /* overflow: auto; */
 }
+
+
 #app {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,7 @@ body,html{
   height: 100%;
   width: 100%;
   background: #D9D9D9;
+  overflow: auto;
 }
 
 a,
@@ -37,8 +40,8 @@ right: 0;
 /* left:0; */
 bottom:0;
 width: 0;
-height: 2px;
-background-color: brown;
+height: 4px;
+background-color: red;
 transition: width 200ms ease-in;
 }
 .underline:hover::before{
@@ -46,3 +49,4 @@ transition: width 200ms ease-in;
   left: 0;
   right: auto;
 }
+

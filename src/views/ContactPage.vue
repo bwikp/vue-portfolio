@@ -20,10 +20,10 @@
     }
     
     .topContact{
-        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     .pageContact{
         display: flex;
