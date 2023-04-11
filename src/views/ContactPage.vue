@@ -28,7 +28,7 @@
     .pageContact{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items:start;
         gap: 50px;
         width: 80%;

@@ -31,39 +31,3 @@
     </div>
 </div>
 </template>
-<style scoped>
-        ul{
-           list-style: none; 
-        }
-        h2{
-            color: red;
-        }
-        .moi{
-            margin-top: 5%;
-        }
-        .infoP{
-            display: flex;
-            flex-direction: column;
-            justify-content:start;
-            align-items: start;
-            padding-left: 5%;
-            padding-top: 5%;
-        }
-        .titleFormation
-        {
-            padding-left: 5%;
-            padding-top: 5%;
-        }
-        .stage,.formation{
-            padding: 5%;
-        }
-        .info{
-            display: flex;
-            flex-direction:column;
-            width: 100%;
-            height: 100%;
-        }
-        *{
-            font-family: 'lato',sans-serif;
-         }
-</style>
