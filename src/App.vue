@@ -2,19 +2,36 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue';
+import { computed } from '@vue/reactivity';
+import { buildDirectiveArgs } from '@vue/compiler-core';
   let bouttonRouge = ref(true);
-  const event = () => {
-    bouttonRouge.value = !bouttonRouge.value
-    console.log(bouttonRouge.value)
+
+  function evalClick() {
+     bouttonRouge.value = !bouttonRouge.value
+        flexNone();
+  }
+  const flexNone = () => {
+            console.log(bouttonRouge.value)
+            if( bouttonRouge == true)
+            {
+              return "display:flex";
+            } 
+            if( bouttonRouge.value == false)
+            {
+              return "display:none"
+            }
+           
     }
+    let resdisplay = computed(flexNone);
+
 </script>
 <template>
   <!-- <div id="majorC"> -->
   <div class="nav">
         <div id="name">Zilpa Michel</div>
-        <div><RouterLink to="/"><div @click="event" :v-model="bouttonRouge" class="menu"></div></RouterLink></div>
+        <div class="menu" @click="evalClick"></div>
   </div>
-  <div class="containerGif">
+  <div  :style="resdisplay" class="containerGif">
   <RouterLink class="linkP contactP" to="/contact">
     <div class="LinkPin"><img src="./assets/anime-signature.gif">
       <p>contact</p>
