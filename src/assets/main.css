@@ -51,12 +51,27 @@ h2{
 }
 
 .menu {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background: red;
+  background: rgb(234, 155, 10);
   margin-right: 10px;
+  border-radius: 20px;
+  box-shadow: rgb(179, 62, 29)  0px 0px 5px 5px;
+  transition: 1.4s ;
+}
+.menu:hover{
+  background:rgb(179, 62, 29);
+  border-radius:0px;
+  width: 40px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  height: 30px;
+  transition: 0.25s ease-out;
+  transform: rotate(1440deg);
+  border-radius: 10px;
+  box-shadow: rgb(234, 155, 10)  0px 0px 5px 3px;
 }
 
 .containerGif {
