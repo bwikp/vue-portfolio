@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue';
 import { computed } from '@vue/reactivity';
 import { buildDirectiveArgs } from '@vue/compiler-core';
-let bouttonRouge = ref(true);
+let bouttonRouge = ref(false);
 
 function evalClick() {
   bouttonRouge.value = !bouttonRouge.value
