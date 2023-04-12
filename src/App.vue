@@ -25,7 +25,7 @@ let resdisplay = computed(flexNone);
 </script>
 <template>
   <div class="nav">
-    <div id="name">Zilpa Michel</div>
+    <RouterLink  to="/"><div id="name">Zilpa Michel</div></RouterLink>
     <div class="menu" @click="evalClick"></div>
   </div>
 
@@ -50,7 +50,7 @@ let resdisplay = computed(flexNone);
 
     <RouterLink class="linkP Skill" to="/contact">
       <div @click="evalClick" class="LinkPin me "><img src="./assets/znk.gif">
-        <p>Projet</p>
+        <p>Project</p>
       </div>
     </RouterLink>
   </div>
