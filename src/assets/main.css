@@ -46,32 +46,29 @@ h2{
 }
 #name {
   padding-left: 10px;
+  font-size: 30px;
   color:  white;
   font-family: 'Playfair Display', sans-serif;
 }
 
 .menu {
-  width: 35px;
-  height: 35px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background: rgb(234, 155, 10);
+  width: 45px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-right: 10px;
-  border-radius: 20px;
-  box-shadow: rgb(179, 62, 29)  0px 0px 5px 5px;
-  transition: 1.4s ;
+  border-radius: 10px;
+  box-shadow: red  0px 0px 3px 3px;
+  transition: 0.7s ;
 }
 .menu:hover{
-  background:rgb(179, 62, 29);
   border-radius:0px;
-  width: 40px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  width: 45px;
   height: 30px;
   transition: 0.25s ease-out;
-  transform: rotate(1440deg);
-  border-radius: 10px;
-  box-shadow: rgb(234, 155, 10)  0px 0px 5px 3px;
+  transform: rotate(720deg);
+  box-shadow: white  0px 0px 3px 3px;
+  border-radius: 50px;
 }
 
 .containerGif {

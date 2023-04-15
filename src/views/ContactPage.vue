@@ -5,11 +5,10 @@
     <hr>
     </div>
     <h2>Email</h2>
-    <h3 class="underline">Zilpa.Michel@gmail.com</h3>
+    <h3 class="underline"><a href="mailto:zilpa.zichel@gmail.com">zilpa.michel@gmail.com</a></h3>
     <h2>Réseaux scoiaux</h2>
-     <h3><a class="underline" href="#">Twitter</a></h3>
-     <h3><a class="underline" href="#">github</a></h3>
-     <h3><a class="underline" href="#">linkedin</a></h3>
+     <h3><a class="underline" href="https://github.com/bwikp">github</a></h3>
+     <h3><a class="underline" href="https://www.linkedin.com/in/michel-zilpa-b66a64235/">linkedin</a></h3>
  </div>
 </template>
 <style scoped>

@@ -1,31 +1,97 @@
 <template>
-    <div id="wpg"><h1>WORK IN PROGRESS</H1><img src="../assets/EPEE_SOLEIL.png"></div>
+    <div class="WelcomeZone">
+        <div class="wtext">Bonjour Je suis</div>
+        <div class="bigText">Michel Zilpa</div>
+        <div class="bigTitre">Développeur Web en formation</div>
+        <div class="introMoi">Je suis actuellement en formation
+et pour obtenir le titre professionnel de développeur web, j'ai besoin
+de trouver un stage de 2 mois et 4 jours du 1er juin au 28 juillet 2023.
+j'espère que l'on pourra travailler ensemble très bientôt.
+
+        <div  class="bigTitre">Si vous êtes intérressé ou curieux d'en savoir plus :</div> 
+            <div class="zoneCv">
+                <h2>Mon cv</h2>
+                <button class="buttonCV"><a href="src/assets/Michel_Zilpa.pdf">Mon CV</a></button>
+            </div>
+        </div>
+
+    </div>
 </template>
 <style scoped>
-    #wpg{
+    .introMoi>.bigTitre{
+        margin-top: 20px;
+    }
+    .zoneCv{
+        margin-top: 25px;
         display: flex;
-        position: relative;
         flex-direction: column;
-        height: 100%;
-        width: 100%;
         justify-content: center;
         align-items: center;
     }
-img{
-    overflow: hidden;
-    width: 80%;
-    height: 80%;
-    padding: 0.5%;
-    border-radius: 20px;
-    box-shadow: rgb(0, 124, 255)  0px 2px 13px 5px;
+.buttonCV {
+    margin-top: 20px ;
+    width: 200px;
+    border-radius: 15px;
+    height: 100px;
+  box-shadow: rgb(179, 62, 29)  0px 0px 5px 5px;
 }
-h1{
+
+.introMoi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.bigTitre {
+    font-size: 26px;
+    font-weight: bolder;
+    color: rgb(226, 60, 60);
+}
+
+.wtext {
+    font-size: 20px;
+}
+
+.wtext,
+.bigText,
+.bigTitre {
+    padding-bottom: 10px;
+}
+
+.bigText {
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Open Sans';
+    color: red;
+}
+
+.WelcomeZone {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 75px;
     font-family: 'Playfair Display', sans-serif;
-    color: rgb(171, 16, 16);
-    position: absolute;
-    font-style: bold;
-    text-align: center;
-    font-weight: 900;
-    font-size: 64px;
+    width: 85%;
+    height: 100%;
+    color: black;
 }
-</style>
+
+#internship {
+    font-size: 30px;
+}
+
+p {
+    font-size: 26px;
+}
+
+h1 {
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-weight: 100;
+    font-size: 52px;
+    color: rgb(178, 60, 60);
+}</style>
