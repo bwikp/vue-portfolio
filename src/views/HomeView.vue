@@ -10,8 +10,8 @@ j'espère que l'on pourra travailler ensemble très bientôt.
 
         <div  class="bigTitre">Si vous êtes intérressé ou curieux d'en savoir plus :</div> 
             <div class="zoneCv">
-                <h2>Mon cv</h2>
-                <button class="buttonCV"><a href="src/assets/Michel_Zilpa.pdf">Mon CV</a></button>
+                <h2>Voici Mon cv</h2>
+                <a href="src/assets/Michel_Zilpa.pdf"><button class="buttonCV">Mon CV</button></a>
             </div>
         </div>
 
