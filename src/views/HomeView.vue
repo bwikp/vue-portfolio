@@ -8,7 +8,7 @@ et pour obtenir le titre professionnel de développeur web, j'ai besoin
 de trouver un stage de 2 mois et 4 jours du 1er juin au 28 juillet 2023.
 j'espère que l'on pourra travailler ensemble très bientôt.
 
-        <div  class="bigTitre">Si vous êtes intérressé ou curieux d'en savoir plus :</div> 
+        <div  class="bigTitre">Si vous êtes intéressé ou curieux d'en savoir plus :</div> 
             <div class="zoneCv">
                 <h2>Voici Mon cv</h2>
                 <a href="src/assets/Michel_Zilpa.pdf"><button class="buttonCV">Mon CV</button></a>
@@ -18,6 +18,7 @@ j'espère que l'on pourra travailler ensemble très bientôt.
     </div>
 </template>
 <style scoped>
+        
     .introMoi>.bigTitre{
         margin-top: 20px;
     }
@@ -55,9 +56,7 @@ j'espère que l'on pourra travailler ensemble très bientôt.
     font-size: 20px;
 }
 
-.wtext,
-.bigText,
-.bigTitre {
+.wtext,.bigText,.bigTitre {
     padding-bottom: 10px;
 }
 
