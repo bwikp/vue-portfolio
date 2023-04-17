@@ -48,7 +48,7 @@ let resdisplay = computed(flexNone);
       </div>
     </RouterLink>
 
-    <RouterLink class="linkP Skill" to="/contact">
+    <RouterLink class="linkP Skill" to="/project">
       <div @click="evalClick" class="LinkPin me "><img src="./assets/znk.gif">
         <p>Project</p>
       </div>
