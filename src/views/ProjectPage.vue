@@ -5,7 +5,7 @@
         <div class="grids post3"><a href="/projet/TimeTracker/TimeTracker-Sujet/" target="_blank">TimeTracker</a></div>
         <div class="grids post4"><a href="assets/Location.png" target="_blank">Bdd Location de voiture </a></div>
         <div class="grids post5"><a href="/projet/loca-cars/" target="_blank">site location voiture</a></div>
-        <div class="grids post6"><a href="#" target="_blank">PRO</a></div>
+        <div class="grids post6"><a href="/projet/album" target="_blank">List d'album Vue</a></div>
     </div>
 </template>
 <style scoped>
