@@ -27,8 +27,11 @@
     .pageContact{
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items:start;
+        justify-content: center;
+        align-items:center;
+        margin-top: 50px;
+        font-family: 'lato',sans-serif;
+        font-size: 26px;
         gap: 50px;
         width: 80%;
         font-family: 'lato',sans-serif;

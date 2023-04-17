@@ -11,7 +11,7 @@ j'espère que l'on pourra travailler ensemble très bientôt.
         <div  class="bigTitre">Si vous êtes intéressé ou curieux d'en savoir plus :</div> 
             <div class="zoneCv">
                 <h2>Voici Mon cv</h2>
-                <a href="src/assets/Michel_Zilpa.pdf"><button class="buttonCV">Mon CV</button></a>
+                <a href="/assets/Michel_Zilpa.pdf"><button class="buttonCV">Mon CV</button></a>
             </div>
         </div>
 
