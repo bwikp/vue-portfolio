@@ -1,11 +1,11 @@
 <template>
     <div class="gallery">
-        <div class="grids post1"><a href="/projet/horloge/" target="_blank">L'Horloge</a></div>
-        <div class="grids post2"><a href="/projet/MiniProjetJs/" target="_blank">Shifumi</a></div>
-        <div class="grids post3"><a href="/projet/TimeTracker/TimeTracker-Sujet/" target="_blank">TimeTracker</a></div>
-        <div class="grids post4"><a href="assets/Location.png" target="_blank">Bdd Location de voiture </a></div>
-        <div class="grids post5"><a href="/projet/loca-cars/" target="_blank">site location voiture</a></div>
-        <div class="grids post6"><a href="#" target="_blank">PRO</a></div>
+        <div class="grids post1"><a class="gridA" href="/projet/horloge/" target="_blank">L'Horloge</a></div>
+        <div class="grids post2"><a class="gridA" href="/projet/MiniProjetJs/" target="_blank">Shifumi</a></div>
+        <div class="grids post3"><a class="gridA" href="/projet/TimeTracker/TimeTracker-Sujet/" target="_blank">TimeTracker</a></div>
+        <div class="grids post4"><a class="gridA" href="assets/Location.png" target="_blank">Bdd Location de voiture </a></div>
+        <div class="grids post5"><a class="gridA" href="/projet/loca-cars/" target="_blank">site location voiture</a></div>
+        <div class="grids post6"><a class="gridA" href="#" target="_blank">PRO</a></div>
     </div>
 </template>
 <style scoped>
@@ -17,11 +17,7 @@
     width: 90%;
     grid-gap: 10px;
 }
-a{
-    color:rgb(73, 61, 61);
-    font-size:50px;
-    font-weight: 900;
-}
+
 a:hover{
     color:rgb(218, 14, 14);
 }
