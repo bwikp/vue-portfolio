@@ -1,11 +1,8 @@
 <template>
     <div class="containerHome">
         <div class="Landing">
-                <p1>Michel Zilpa</p1>
-                <p2>Développeur Web</p2>
-            <div>
-            <p2>En Rercher d'alternance</p2>
-            </div>
+            <p1 id="Ltitle">Zilpa Michel, Développeur Web </p1>
+            <p>Bonjour je suis un jeune Développeur à la recherche d'un Stage pour ma formation concepteur-developpeur-d-applications avec simplon</p>
         </div>
         <div class="landingLink">
             <a href="https://simplon.co/formation/concepteur-developpeur-d-applications/12" target="_blank"><img class="svgIcon" src="/src/assets/SIMPLON.svg" alt=""></a>

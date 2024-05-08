@@ -25,7 +25,7 @@ let resdisplay = computed(flexNone);
 </script>
 <template>
   <div class="nav">
-    <RouterLink  to="/"><div id="name">Zilpa Michel</div></RouterLink>
+    <RouterLink  to="/"><div id="name">Z</div></RouterLink>
     <div class="menu" @click="evalClick"></div>
   </div>
 
