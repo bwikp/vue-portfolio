@@ -5,8 +5,7 @@
          <h3>27/03/2001</h3>
     </div>
     <div class="stage">
-        <p>Je suis actuellement dans une formation pour obtenir le titre professionnel de Développeur web, dans le cadre cette formation,
-             nous avons un stage obligatoire du 01/06/2023 au 28/07/2023, soit 8 semaines et 2 jours.
+        <p>Je suis actuellement 
         </p>
     </div>
     <div class="formation ">
@@ -21,7 +20,7 @@
         <h2 class="titleFormation">formation</h2>
     <div class="formation">
         <ul>
-            <li>Formation développeur web : 17/10/2022 - 15/09/2023 CCI formation Lyon 9e</li>
+            <li>Formation développeur web :  Titre professionel Développeur web et web mobile</li>
             <li>FreeCodeCamp :  Responsive Web certifications</li>
             <li>JavaScript Algorithmes & DataStructure certifications</li>
             <li>Licence mathématique/informatique Lyon 1 : 2 ans</li>

@@ -4,27 +4,29 @@ import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue';
 import { computed } from '@vue/reactivity';
 import { buildDirectiveArgs } from '@vue/compiler-core';
-let bouttonRouge = ref(false);
+import NavMenu from '@/views/NavMenu.vue';
+// let bouttonRouge = ref(false);
 
-function evalClick() {
-  bouttonRouge.value = !bouttonRouge.value
-  flexNone();
-}
-const flexNone = () => {
-  console.log(bouttonRouge.value)
-  if (bouttonRouge == true) {
-    return "display:flex";
-  }
-  if (bouttonRouge.value == false) {
-    return "display:none"
-  }
+// function evalClick() {
+//   bouttonRouge.value = !bouttonRouge.value
+//   flexNone();
+// }
+// const flexNone = () => {
+//   console.log(bouttonRouge.value)
+//   if (bouttonRouge == true) {
+//     return "display:flex";
+//   }
+//   if (bouttonRouge.value == false) {
+//     return "display:none"
+//   }
 
-}
-let resdisplay = computed(flexNone);
+// }
+// let resdisplay = computed(flexNone);
 
 </script>
 <template>
-  <div class="nav">
+  <NavMenu/>
+  <!-- <div class="nav">
     <RouterLink  to="/"><div id="name">Z</div></RouterLink>
     <div class="menu" @click="evalClick"></div>
   </div>
@@ -53,6 +55,6 @@ let resdisplay = computed(flexNone);
         <p>Project</p>
       </div>
     </RouterLink>
-  </div>
+  </div> -->
   <RouterView class="rooterView" />
 </template>
