@@ -1,8 +1,8 @@
 <script setup>
-import { Ref } from 'vue';
+import { ref } from 'vue';
 import { computed } from '@vue/reactivity';
 
-let bouttonRouge = Ref(false);
+let bouttonRouge = ref(false);
 
 function evalClick() {
   bouttonRouge.value = !bouttonRouge.value
