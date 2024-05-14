@@ -38,7 +38,7 @@ h2 {
 }
 
 .moi {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 
@@ -137,19 +137,17 @@ h2 {
   padding-top: 5%;
 }
 
-.titleFormation {
+.titleFormation,.stage,.formation {
   padding-left: 5%;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
-.stage,
-.formation {
-  padding: 5%;
-}
 
 .info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
   width: 100%;
   height: 100%;
 }
@@ -257,11 +255,11 @@ h2 {
     height: 50%;
   }
 
-  .rooterView {
+  /* .rooterView {
   margin-top: 50px;
   padding-bottom: 100px;
 
-  }
+  } */
   .WelcomeZone {
     display: flex;
     flex-direction: column;
@@ -278,7 +276,6 @@ h2 {
   .formation,
   .stage {
     padding-left: 5%;
-    padding-top: 2%;
     margin: 0;
     font-size: 24px;
   }
