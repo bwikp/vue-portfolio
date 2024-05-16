@@ -1,11 +1,18 @@
 <template>
   <div class="info">
     <div class="infoP">
-      <h2>Zilpa Michel</h2>
+      <h2>À propos de moi</h2>
       <h3>27/03/2001</h3>
     </div>
     <div class="stage">
-      <p>Je suis actuellement</p>
+      <p>
+        Je m'appelle Michel Zilpa, 23 ans, j'ai grandi et évolué avec
+        l’informatique et aujourd’hui je voudrais poursuivre cet apprentissage à
+        travers une alternance avec ma Formation de Concepteur développeur
+        d’application Chez Simplon. Dynamique et autonome, je suis prêt à
+        m'investir pleinement dans une entreprise où je pourrai contribuer et
+        apprendre davantage.
+      </p>
     </div>
     <div class="formation">
       <h2>Qui suis je ?</h2>
