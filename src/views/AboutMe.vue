@@ -15,16 +15,35 @@
       </p>
     </div>
     <div class="formation">
-      <h2>Qui suis je ?</h2>
-      <p class="moi">
-        Je suis un apprenti développeur basé sur Lyon, qui aujourd'hui est plus
-        motivé que jamais. À rejoindre le monde du web. Je suis curieux et avide
-        de savoir, je ne cherche rien d'autre que l'opportunité d'intégrer le
-        monde du web et de l'informatique en général.
-      </p>
+      <h2>À propos de la formation</h2>
+      <p>
+        La formation débutera le 29 septembre 2024 au rythme de 3 semaines en
+        entreprise et 1 semaine de formation, les apprenants ont toutefois la
+        possibilité d'intégrer l'entreprise avant si nécessaire. Les objectifs
+        de la formation sont d'apprendre au apprenant à concevoir et développer
+        une application sécurisée ainsi qu'à préparer leur déploiement.
+         <p>Au programme :</p>
+        <ul>
+          <li>JavaScript TypeScript PHP SQL</li>
+          <li>ExpressJS NestJS APiPlatform</li>
+          <li>NextJS Symfony REACT</li>
+        </ul> 
+        </p>
+        <p>
+          Simplon
+        est un centre de formation reconnu qui a collaborer avec des géants
+        de l'industrie comme Apple, Meta et Microsoft. Simplon a la volonté de
+        former des profils plus rare dans l'industrie de l'informatique, jeunes
+        issue de quartiers défavorisés, des femmes, des personnes handicapé. Les
+        formations sont entièrement prises en charge pour les apprenants grâce
+        au soutien multiple de Simplon, Apple, Orange, Totale énergie, l'Union
+        européenne et bien d'autre. Vous pourrez avoir confiance dans la qualité
+        de la formation ainsi qu'à mon sérieux tout au long de celle-ci. 
+        </p>
+        <p>Si vous souhaitez en savoir plus sur la formation, veuillez contacter lbitene@simplon.co</p>
     </div>
-    <h2 class="titleFormation">formation</h2>
-    <div class="formation">
+    <h2 class="titleFormation">Parcours</h2>
+    <div class="parcours">
       <ul>
         <li>
           Formation développeur web : Titre professionel Développeur web et web

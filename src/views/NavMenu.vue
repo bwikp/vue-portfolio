@@ -35,7 +35,7 @@ let resdisplay = computed(flexNone);
 
     <RouterLink class="linkP AboutLink" to="/about">
       <div @click="evalClick"  class="LinkPin me"><img src="../assets/fzar.gif">
-        <p> More About Me ! </p>
+        <p> More Info ! </p>
       </div>
     </RouterLink>
 

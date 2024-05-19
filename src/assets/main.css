@@ -37,9 +37,7 @@ h2 {
   color: red;
 }
 
-.moi {
-  margin-top: 2%;
-}
+
 
 
  .containerHome{
@@ -100,6 +98,7 @@ h2 {
   font-family: 'lato', sans-serif;
   font-size: 1.5em;
   padding: 2%;
+  padding-left: 0%;
 }
 .landingLink{
   display: flex;
@@ -134,22 +133,27 @@ h2 {
   justify-content: start;
   align-items: start;
   padding-left: 5%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 .titleFormation,.stage,.formation {
   padding-left: 5%;
   padding-top: 2%;
+  padding-right: 5%;
 }
-
-
+.parcours {
+  padding: 2%;
+}
+.formation p {
+  padding-top: 2%;
+  }
 .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 
 * {
@@ -274,7 +278,8 @@ h2 {
 }
   .titleFormation,
   .formation,
-  .stage {
+  .stage,
+  .parcours {
     padding-left: 5%;
     margin: 0;
     font-size: 24px;
