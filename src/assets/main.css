@@ -1,18 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital,wght@0,400;1,400;1,900&display=swap');
 @import url('//fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet";');
 
-:root {
-  --color-bg1: rgb(30, 25, 70);
-  --color-bg2: rgb(14, 23, 59);
-  --color1: 102, 130, 184;
-  --color2: 221, 74, 255;
-  --color3: 100, 220, 255;
-  --color4: 200, 50, 50;
-  --color5: 180, 180, 50;
-  --color-interactive: 140, 100, 255;
-  --circle-size: 80%;
-  --blending: hard-light;
-}
+
 
 *,
 html,
@@ -204,6 +193,9 @@ h2 {
   width: 100%;
 }
 @media (max-width: 990px) {
+
+    
+
 
   .Zone2 {
     display:  none;

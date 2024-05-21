@@ -9,6 +9,7 @@
     </div>
 </template>
 <style scoped>
+
 .gallery {
     display: flex;
     flex-direction: column;
