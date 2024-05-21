@@ -1,6 +1,6 @@
 <template>
   <div class="SKcontainer">
-    <div>
+    <div class="SkillC">
       <div class="skLegend">
         <h1 class="legend red">Skills</h1>
         <div class="legendSk">
@@ -34,21 +34,11 @@
     </div>
   </div>
 </template>
-<style scoped>
+<style>
 
-@media (max-width: 1000px) {
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
-    }
-
-    .front-end {
-  background: rgba(10, 51, 21, 0.6);
+.SkillC {
+    height: 100%;
 }
-
-}
-
 .skLegend {
   display: flex;
   flex-direction: row;
@@ -74,10 +64,8 @@
 .legendSkF {
   display: flex;
   flex-direction: row-reverse;
-  position: relative;
   padding: 1%;
   gap: 2%;
-  left: 0;
 }
 .skLegend h1 {
   color: red;
