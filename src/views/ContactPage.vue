@@ -1,11 +1,13 @@
 <template>
   <div class="pushingP">
     <div class="pageContact">
-      <h1>Contact</h1>
-      <div>
-        <textarea name="" id=""></textarea>
+      <div class="contactForm front-end">
+        <h1>Contacter Moi</h1>
+        <input type="text" placeholder="Nom de l'Entreprise">
+        <input type="text" placeholder="Un Email pour vous recontactez">
+        <textarea  class="txtmail"  placeholder="Votre Message"></textarea>
+        <div class="sendMail back-end">Envoyer</div>
       </div>
-      <div class="sendMail front-end">Envoyer</div>
 
     </div>
     <div class="ContactList">
@@ -26,6 +28,42 @@
 </template>
 <style>
 
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  height: 70%;
+  width : 50%;
+  text-align: left;
+  border-radius: 20.5px;
+  padding: 4%;
+  border: 1px solid black;
+}
+.contactForm h1 {
+  font-size: xx-large;
+}
+ .contactForm input {
+  height: 50px;
+  width: 100%;
+  padding: 2%;
+  border-radius: 12.5px;
+  border: 1px solid;
+  text-align: left;
+  box-sizing: border-box;
+ }
+
+.txtmail {
+  resize: none;
+  width: 96%;
+  height: 100px;
+  border-radius: 12.5px;
+  padding: 2%;
+  border: 1px solid;
+}
+
 .sendMail{
     height: 50px;
     width: 125px;
@@ -38,7 +76,11 @@
 
 .sendMail:hover{
     cursor: pointer;
-    background: rgba(162, 223, 178, 0.6);
+    /* background: rgba(162, 223, 178, 0.6); */
+}
+.sendMail:active {
+  background: rgba(219, 236, 223, 0.6);
+
 }
 .pushingP {
   display: flex;

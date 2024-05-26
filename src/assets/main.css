@@ -193,6 +193,14 @@ h2 {
 }
 @media (max-width: 990px) {
 
+  .pageContact {
+    width: 100% ;
+  }
+
+ .contactForm {
+  height: 60%;
+  width: 80%;
+ } 
 .parcours {
   padding-bottom: 5%;
 }
