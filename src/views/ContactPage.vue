@@ -1,12 +1,27 @@
+<script setup>
+ import { ref } from 'vue';
+ let message = ref("ca marche")
+ let titre = ref("Test")
+
+const senduntruc = () =>{
+  fetch("http://localhost:8080/gomail/"+ message.value +"/"+ titre.value,{
+    method: "POST",
+    mode: "cors"
+  }).then(r =>console.log(r))
+} 
+
+let count = ref(0)
+</script>
+
 <template>
   <div class="pushingP">
     <div class="pageContact">
       <div class="contactForm front-end">
         <h1>Contacter Moi</h1>
-        <input type="text" placeholder="Nom de l'Entreprise">
-        <input type="text" placeholder="Un Email pour vous recontactez">
+        <input type="text" placeholder="Nom de l'Entreprise" v-model="titre" >
+        <input type="text" placeholder="Un Email pour vous recontactez" v-model="message">
         <textarea  class="txtmail"  placeholder="Votre Message"></textarea>
-        <div class="sendMail back-end">Envoyer</div>
+        <div class="sendMail back-end" @click="senduntruc()">Envoyer</div>
       </div>
 
     </div>
