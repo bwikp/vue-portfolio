@@ -7,17 +7,23 @@
 
  let payload = {
     titre: titre.value,
-    mail: message.value
+    mail: mail.value,
+    message: message.value
  }
 
 
 const senduntruc = () =>{
-  fetch("http://localhost:8080/gomail/"+ message.value +"/"+ titre.value,{
+  fetch("http://localhost:8080/gomail/send",{
     method: "POST",
     mode: "cors",
-  }).then(r =>console.log(r))
-} 
-
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body: payload
+  }).then(r =>console.log(r)).catch(error =>{
+    console.error(error)
+  } )
+}
 </script>
 
 <template>
@@ -25,9 +31,9 @@ const senduntruc = () =>{
     <div class="pageContact">
       <div class="contactForm front-end">
         <h1>Contacter Moi</h1>
-        <input type="text" placeholder="Nom de l'Entreprise" v-model="titre" >
-        <input type="text" placeholder="Un Email pour vous recontactez" v-model="mail">
-        <textarea  class="txtmail"  placeholder="Votre Message" v-model="message"></textarea>
+        <input type="text" placeholder="Nom de l'Entreprise" v-model="titre">
+        <input type="text" placeholder="Un Email pour vous recontactez" v-model="mail" >
+        <textarea  class="txtmail"  placeholder="Votre Message" v-model="message" ></textarea>
         <div class="sendMail back-end" @click="senduntruc()">Envoyer</div>
       </div>
 
