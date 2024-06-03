@@ -1,16 +1,23 @@
 <script setup>
  import { ref } from 'vue';
- let message = ref("ca marche")
- let titre = ref("Test")
+
+ let message = ref("")
+ let mail = ref("")
+ let titre = ref("")
+
+ let payload = {
+    titre: titre.value,
+    mail: message.value
+ }
+
 
 const senduntruc = () =>{
   fetch("http://localhost:8080/gomail/"+ message.value +"/"+ titre.value,{
     method: "POST",
-    mode: "cors"
+    mode: "cors",
   }).then(r =>console.log(r))
 } 
 
-let count = ref(0)
 </script>
 
 <template>
@@ -19,8 +26,8 @@ let count = ref(0)
       <div class="contactForm front-end">
         <h1>Contacter Moi</h1>
         <input type="text" placeholder="Nom de l'Entreprise" v-model="titre" >
-        <input type="text" placeholder="Un Email pour vous recontactez" v-model="message">
-        <textarea  class="txtmail"  placeholder="Votre Message"></textarea>
+        <input type="text" placeholder="Un Email pour vous recontactez" v-model="mail">
+        <textarea  class="txtmail"  placeholder="Votre Message" v-model="message"></textarea>
         <div class="sendMail back-end" @click="senduntruc()">Envoyer</div>
       </div>
 
