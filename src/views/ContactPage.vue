@@ -11,11 +11,6 @@ import { ref } from "vue";
     message: message.value
  }
 
-
- 
- 
-
-
 const senduntruc = () =>{
   fetch("http://localhost:8080/gomail/send",{
     method: "POST",
