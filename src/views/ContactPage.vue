@@ -1,15 +1,19 @@
 <script setup>
- import { ref } from 'vue';
+import { ref } from "vue";
 
- let message = ref("")
- let mail = ref("")
- let titre = ref("")
+ let message = defineModel('message')
+ let mail = defineModel('mail')
+ let titre = defineModel('titre')
 
  let payload = {
     titre: titre.value,
     mail: mail.value,
     message: message.value
  }
+
+
+ 
+ 
 
 
 const senduntruc = () =>{
@@ -19,10 +23,13 @@ const senduntruc = () =>{
     headers: {
       'Content-type': 'application/json'
     },
-    body: payload
+    body: JSON.stringify(payload)
   }).then(r =>console.log(r)).catch(error =>{
     console.error(error)
-  } )
+  })
+
+ console.log(JSON.stringify(payload))
+
 }
 </script>
 
@@ -31,9 +38,9 @@ const senduntruc = () =>{
     <div class="pageContact">
       <div class="contactForm front-end">
         <h1>Contacter Moi</h1>
-        <input type="text" placeholder="Nom de l'Entreprise" v-model="titre">
-        <input type="text" placeholder="Un Email pour vous recontactez" v-model="mail" >
-        <textarea  class="txtmail"  placeholder="Votre Message" v-model="message" ></textarea>
+        <input type="text" placeholder="Nom de l'Entreprise"  v-model="payload.titre">
+        <input type="text" placeholder="Un Email pour vous recontactez" v-model="payload.mail">
+        <textarea  class="txtmail"  placeholder="Votre Message" v-model="payload.message" ></textarea>
         <div class="sendMail back-end" @click="senduntruc()">Envoyer</div>
       </div>
 
