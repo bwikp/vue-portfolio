@@ -12,7 +12,7 @@ import { ref } from "vue";
  }
 
 const senduntruc = () =>{
-  fetch("http://localhost:8080/gomail/send",{
+  fetch("https://bwikp:8080/gomail/send",{
     method: "POST",
     mode: "cors",
     headers: {
