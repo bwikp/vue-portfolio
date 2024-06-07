@@ -1,9 +1,14 @@
 <script setup>
 import { ref } from "vue";
 
- let message = defineModel('message')
- let mail = defineModel('mail')
- let titre = defineModel('titre')
+
+
+ const regexMail = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
+ const notNullRegex = /^.{3,}$/
+
+ let message = ref('')
+ let mail = ref('')
+ let titre = ref('')
 
  let payload = {
     titre: titre.value,
@@ -12,7 +17,7 @@ import { ref } from "vue";
  }
 
 const senduntruc = () =>{
-  fetch("https://bwikp:8080/gomail/send",{
+  fetch("https://bwikp.com/gomail/send",{
     method: "POST",
     mode: "cors",
     headers: {
@@ -33,10 +38,13 @@ const senduntruc = () =>{
     <div class="pageContact">
       <div class="contactForm front-end">
         <h1>Contacter Moi</h1>
-        <input type="text" placeholder="Nom de l'Entreprise"  v-model="payload.titre">
-        <input type="text" placeholder="Un Email pour vous recontactez" v-model="payload.mail">
-        <textarea  class="txtmail"  placeholder="Votre Message" v-model="payload.message" ></textarea>
-        <div class="sendMail back-end" @click="senduntruc()">Envoyer</div>
+        <input type="text" placeholder="Nom de l'Entreprise"   @change=" () =>{ titre = payload.titre }"  v-model="payload.titre">
+        <input type="text" placeholder="Un Email pour vous recontactez" @change=" () =>{ mail = payload.mail }" v-model="payload.mail ">
+        <p class="alertMail" v-if="!regexMail.test(mail) && mail != ''  ">Mail non valide</p>
+        <textarea  class="txtmail"  placeholder="Votre Message"  @change=" () =>{ message = payload.message }"  v-model="payload.message" ></textarea>
+        <div v-if="regexMail.test(mail) && notNullRegex.test(titre) && notNullRegex.test(message) " class="sendMail back-end" @click="senduntruc()">Envoyer</div>
+        <div v-else class="buttonOff" >Incomplet</div>
+
       </div>
 
     </div>
@@ -58,6 +66,22 @@ const senduntruc = () =>{
 </template>
 <style>
 
+  .buttonOff {
+    height: 50px;
+    width: 125px;
+    border-radius: 20.5px;
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    background: gray;
+  }
+
+.alertMail{
+  color: red;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+}
 
 .contactForm {
   display: flex;
