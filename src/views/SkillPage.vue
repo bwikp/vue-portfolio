@@ -1,3 +1,7 @@
+<script setup>
+import TheFooter from "../components/TheFooter.vue";
+
+</script>
 <template>
   <div class="SKcontainer">
     <div class="SkillC">
@@ -33,6 +37,7 @@
     </div>
     </div>
   </div>
+  <TheFooter/>
 </template>
 <style>
 

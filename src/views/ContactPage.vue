@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-
+import TheFooter from "../components/TheFooter.vue";
 
 
  const regexMail = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
@@ -48,20 +48,7 @@ const senduntruc = () =>{
       </div>
 
     </div>
-    <div class="ContactList">
-        <h3 class="underline">
-        <img class=" contactIcon" src="/src/assets/email-icon.svg" />
-          <a href="mailto:zilpa.zichel@gmail.com"></a>
-        </h3>     
-        <h3 class="underline"><a href="https://github.com/bwikp">
-        <img class=" contactIcon" src="/src/assets/github-mark.svg" />
-        </a></h3>
-        <h3 class="underline">
-          <a href="https://www.linkedin.com/in/michel-zilpa-b66a64235/" target="_blank">
-        <img class="contactIcon" src="/src/assets/linkedin.svg" />
-          </a>
-        </h3>
-      </div>
+    <TheFooter/>
     </div>
 </template>
 <style>

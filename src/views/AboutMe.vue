@@ -1,3 +1,8 @@
+<script setup>
+import TheFooter from "../components/TheFooter.vue";
+
+</script>
+
 <template>
   <div class="info">
     <div class="infoP">
@@ -59,4 +64,5 @@
       </ul>
     </div>
   </div>
+  <TheFooter/>
 </template>

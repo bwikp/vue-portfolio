@@ -1,3 +1,7 @@
+<script setup>
+import TheFooter from "../components/TheFooter.vue";
+
+</script>
 <template>
   <div class="containerProject">
     <div class="gallery">
@@ -17,6 +21,7 @@
       <div class="grids post6"><a href="#">Working on it </a></div>
     </div>
   </div>
+  <TheFooter/>
 </template>
 <style scoped>
     .containerProject {
