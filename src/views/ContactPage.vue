@@ -16,21 +16,32 @@ import TheFooter from "../components/TheFooter.vue";
     message: message.value
  }
 
-const senduntruc = () =>{
-  fetch("https://bwikp.com/gomail/send",{
+let mailR = ref()
+
+let data = ref()
+
+let sent = ref(false)
+const senduntruc =  async () =>{
+   mailR = await  fetch("https://bwikp.com/gomail/send",{
     method: "POST",
     mode: "cors",
     headers: {
       'Content-type': 'application/json'
     },
     body: JSON.stringify(payload)
-  }).then(r =>console.log(r)).catch(error =>{
-    console.error(error)
   })
+//  console.log(JSON.stringify(payload))
 
- console.log(JSON.stringify(payload))
-
+  data = await mailR.status
+  if(data = 200)
+  {
+    sent.value = true
+  }
+//  console.log(data)
 }
+
+
+
 </script>
 
 <template>
@@ -42,14 +53,13 @@ const senduntruc = () =>{
         <input type="text" placeholder="Un Email pour vous recontactez" @change=" () =>{ mail = payload.mail }" v-model="payload.mail ">
         <p class="alertMail" v-if="!regexMail.test(mail) && mail != ''  ">Mail non valide</p>
         <textarea  class="txtmail"  placeholder="Votre Message"  @change=" () =>{ message = payload.message }"  v-model="payload.message" ></textarea>
-        <div v-if="regexMail.test(mail) && notNullRegex.test(titre) && notNullRegex.test(message) " class="sendMail back-end" @click="senduntruc()">Envoyer</div>
-        <div v-else class="buttonOff" >Incomplet</div>
-
+        <div v-if="regexMail.test(mail) && notNullRegex.test(titre) && notNullRegex.test(message) && sent == false" class="sendMail back-end" @click="senduntruc()">Envoyer</div>
+        <div v-if="!regexMail.test(mail) || !notNullRegex.test(titre) || !notNullRegex.test(message)" class="buttonOff" >Incomplet</div>
+        <div v-if="sent">✔️✔️Bien Reçu✔️✔️</div>
       </div>
-
+    </div>
     </div>
     <TheFooter/>
-    </div>
 </template>
 <style>
 

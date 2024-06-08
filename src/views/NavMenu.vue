@@ -9,7 +9,7 @@ function evalClick() {
   flexNone();
 }
 const flexNone = () => {
-  console.log(bouttonRouge.value);
+  // console.log(bouttonRouge.value);
   if (bouttonRouge == true) {
     return "display:flex";
   }

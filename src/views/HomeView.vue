@@ -1,3 +1,7 @@
+<script setup>
+import TheFooter from "../components/TheFooter.vue";
+  
+</script>
 <template>
   <div class="containerHome">
     <div class="Landing">
@@ -49,5 +53,6 @@
       </div>
     </div>
   </div>
+  <TheFooter/>
 </template>
 <style scoped></style>
