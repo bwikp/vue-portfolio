@@ -13,9 +13,9 @@ import TheFooter from "../components/TheFooter.vue";
           pour ma formation
           <b
             ><a
-              href="https://simplon.co/formation/concepteur-developpeur-d-applications/12"
+              href="https://simplon.co/formation/concepteur-developpeur-en-environnement-devops/800"
               target="_blank"
-              >Concepteur-Developpeur-d-Applications</a
+              >Concepteur-Developpeur-d-Applications en environnement DevOps</a
             >
           </b>
           chez simplon. J'ai commencé mon apprentisage grâce a FreecodeCamp puis
